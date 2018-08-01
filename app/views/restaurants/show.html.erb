@@ -1,0 +1,27 @@
+
+<div class ="task-head">
+  <p>Restaurant:</p>
+</div>
+
+<div class = "task-info">
+  <p><%= @Restaurant.name %></p>
+</div>
+
+<div class ="task-head">
+  <p>Details:</p>
+</div>
+
+<div class = "task-info">
+  <p><%= @Restaurant.category %></p>
+</div>
+
+<div>
+  <p><%= @Restaurant.phone_number %></p>
+</div>
+
+<div>
+  <p><%= @Restaurant.address%></p>
+</div>
+
+
+<%= button_to "Back to list", restaurant_path, method: :get %>
